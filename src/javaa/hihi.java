@@ -1,9 +1,9 @@
 package javaa;
 
-public class jav2 {
+public class hihi {
 
 	public static void main(String[] args) {
-		System.out.println("I LOVE YU");
+		System.out.println("hihi");
 
 	}
 
