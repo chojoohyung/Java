@@ -1,6 +1,8 @@
 package Study;
+
 import java.util.Random;
 import java.util.Scanner;
+
 /*
  * 369게임
  * 1. 1~50 사이의 랜덤 숫자를 저장한다.
@@ -16,11 +18,29 @@ import java.util.Scanner;
 //이해 안됨
 public class IfEx22 {
 
-	public static void main(String[] args) {	
-		Scanner sc = new Scanner(System.in);
-		Random ran = new Random();
-		int randomnumber = ran.nextInt(51);
-		
+	public static void main(String[] args) {
+
+		int i = 1;
+		while (i <= 50) {
+			Random ran = new Random();
+			int randomnumber = ran.nextInt(51);
+
+			int number10 = randomnumber / 10;
+			int number1 = randomnumber % 10;
+
+			if (number10 == 3 || number10 == 6 || number10 == 9) {
+
+				System.out.print("짝");
+				if (number1 == 3 || number1 == 6 || number1 == 9) {
+					System.out.println("짝");
+				}
+			} else if (number1 == 3 || number1 == 6 || number1 == 9) {
+				System.out.println("짝");
+			} else {
+				System.out.println(randomnumber);
+			}
+			i++;
+		}
 
 	}
 

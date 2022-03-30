@@ -32,7 +32,7 @@ public class IfEx21 {
 		} else {
 			System.out.println("랜덤 숫자 :" + number);
 			System.out.println("랜덤 숫자의 가운데 숫자 :" + answer);
-			System.out.println("랜덤 숫자의 가운데 숫자 :" + answer);
+			System.out.println("내가 입력한 숫자:" + me);
 			System.out.println("떙");
 		}
 		

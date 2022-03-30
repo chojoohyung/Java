@@ -1,5 +1,8 @@
 package Study;
 import java.util.Scanner;
+
+import jdk.nashorn.internal.ir.WhileNode;
+
 import java.util.Random;
 
 /* 가위바위보 게임
@@ -13,7 +16,7 @@ public class IfEx18 {
 		Scanner sc = new Scanner(System.in);	
 		Random ran = new Random();
 		
-		
+	
 		int com = 0; // 랜덤으로 저장
 		int me = 0; // 키보드로 입력받아 저장
 		com = ran.nextInt(3);
