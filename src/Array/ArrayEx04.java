@@ -1,6 +1,7 @@
 package Array;
 
-import java.util.Arrays;
+
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class ArrayEx04 {
@@ -10,7 +11,7 @@ public class ArrayEx04 {
 		
 		int[] s = { 11 , 22 , 33 , 44 , 55};
 		
-		Arrays.sort(s);
+		Array.sort(s);
 		for (int i : s) {
 			System.out.println(i);
 		}
