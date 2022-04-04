@@ -1,4 +1,4 @@
-package Study;
+package IfEx;
 import java.util.Scanner;
 
 /* 놀이기구 이용제한

@@ -1,4 +1,4 @@
-package Study;
+package IfEx;
 import java.util.Scanner;
 /*영수증 출력
  * 1. 메뉴판을 출력한다.

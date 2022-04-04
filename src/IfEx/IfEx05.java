@@ -1,4 +1,4 @@
-package Study;
+package IfEx;
 import java.util.Scanner;
 
 public class IfEx05 {

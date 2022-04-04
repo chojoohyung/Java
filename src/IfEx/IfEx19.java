@@ -1,4 +1,4 @@
-package Study;
+package IfEx;
 import java.util.Random;
 import java.util.Scanner;
 /*

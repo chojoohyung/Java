@@ -1,4 +1,4 @@
-package Study;
+package IfEx;
 import java.util.Scanner;
 
 import jdk.nashorn.internal.ir.WhileNode;

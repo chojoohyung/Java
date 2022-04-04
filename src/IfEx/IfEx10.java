@@ -1,4 +1,4 @@
-package Study;
+package IfEx;
 import java.util.Scanner;
 /* 1. Id를 입력받아 dbId와 일치할 경우에만 Pw를 입력할 수 있다.
  * 2. Id가 틀린 경우, "Id를 확인해주세요"라는 메세지를 출력한다.

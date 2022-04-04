@@ -1,4 +1,4 @@
-package Study;
+package IfEx;
 import java.util.Scanner;
 /*성적 유효성 검사
  * 1. 성적을 입력받는다.

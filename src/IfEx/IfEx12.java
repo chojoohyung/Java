@@ -1,4 +1,4 @@
-package Study;
+package IfEx;
 import java.util.Scanner;
 
 /*쵝대값 구하기(1단계)

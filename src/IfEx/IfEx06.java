@@ -1,4 +1,4 @@
-package Study;
+package IfEx;
 import java.util.Scanner;
 /* # 구구단 게임(1단계)
  * 1. 구구단 문제를 출제하기 위해  숫자 2개를 입력받는다.
