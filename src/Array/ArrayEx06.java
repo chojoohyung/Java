@@ -6,7 +6,7 @@ public class ArrayEx06 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		/*// 인덱스    0   1   2   3   4
+		// 인덱스    0   1   2   3   4
 				int[] arr = {87, 11, 45, 98, 23};
 				
 				// 문제1) 인덱스를 입력받아 성적 출력

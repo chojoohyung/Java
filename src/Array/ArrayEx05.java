@@ -1,48 +1,30 @@
 package Array;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class ArrayEx05 {
 
 	public static void main(String[] args) {
+		
+		// 인덱스   	 0   1   2   3   4
+		int[] arr = {87, 11, 45, 98, 23};
 
-		int[] arr = new int[5];
-
-		// 문제1) arr배열에 1~100점 사이의 랜덤 정수를 5개 저장
-		// 예   1) 87, 11, 92, 14, 47
-		Random ran = new Random();
+		// 문제2) 성적을 입력받아 인덱스 출력
+		// 정답2) 성적 입력 : 11		인덱스 : 1
+		Scanner sc = new Scanner(System.in);
+		System.out.println("성적 입력: ");
+		int indexnumber = sc.nextInt();
 		
-		for(int i = 0; i<arr.length; i++) {
-			int random = ran.nextInt(100) +1;
-		
-			arr[i] = random;
-			System.out.print(arr[i] +", ");
-		}
-		System.out.println();
-		System.out.println("==========================");
-		// 문제2) 전교생의 총점과 평균 출력
-		// 예   2) 총점(251) 평균(50.2)
-		
-		int sum = 0;
-		
-		for(int i = 0; i<arr.length; i++) {
-			sum += arr[i];
-		}
-		
-		int avg = sum / arr.length;
-		System.out.println();
-		System.out.println("총점 :" + sum + ",  평균" + avg);
-		System.out.println("==========================");
-		// 문제3) 성적이 60점 이상이면 합격. 합격생 수 출력
-		// 예   3) 2명
-		int cnt = 0;
-		for(int i = 0; i<arr.length; i++) {
-			if(60 <= arr[i]) {
-				cnt++;
+		for(int i =0 ; i<arr.length; i++) {
+			if(arr[i]==indexnumber) {
+				System.out.println("인덱스: "+ arr[indexnumber]);
 			}
 		}
-
-		System.out.println(cnt + "명");
+			}
+		
+		
+		
 	}
 
-}
+
