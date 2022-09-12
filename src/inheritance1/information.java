@@ -1,4 +1,4 @@
-package inheritance11;
+package inheritance1;
 
 public class information {
 
