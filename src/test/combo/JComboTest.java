@@ -1,0 +1,79 @@
+package test.combo;
+
+import java.awt.GridLayout;
+import java.awt.Image;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class JComboTest extends JFrame implements ItemListener{
+	JComboBox<String> comboMeal, comboDrink;
+	JLabel lblMeal, lblDrink;		//ImageIcon 설정할 라벨
+	
+	public JComboTest() {
+		JPanel panN = new JPanel();
+		JPanel panC = new JPanel(new GridLayout(1,2,20,20));
+		
+		JLabel lblM = new JLabel("식사: ");	//문자열 출력 라벨
+		JLabel lblD = new JLabel("음료: ");
+		ImageIcon iconM = new ImageIcon("img/m0.jpg");
+		ImageIcon iconD = new ImageIcon("img/D0.jpg");
+		lblMeal = new JLabel(iconM);
+		lblDrink = new JLabel(iconD);
+		
+		String[] itemM = {"삼겹살","초밥","국밥","파스타","회"};
+		String[] itemD = {"콜라","사이다","소주","맥주","사케"};
+		
+		comboMeal = new JComboBox<String>(itemM);
+		comboDrink = new JComboBox<String>(itemD);
+		
+		comboMeal.addItemListener(this);
+		comboDrink.addItemListener(this);
+		
+		panN.add(lblM); panN.add(comboMeal);	
+		panN.add(lblD); panN.add(comboDrink);
+		
+		panC.add(lblMeal); panC.add(lblDrink);
+		
+		add("North",panN);		//위치
+		add("Center",panC);
+		
+		
+		
+		
+		setTitle("JComboBox 연습");
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setBounds(600, 150, 500, 400);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new JComboTest();
+
+	}
+	
+	@Override
+	public void itemStateChanged(ItemEvent e) {
+		int selectIndex = 0;
+		ImageIcon icon = null;
+		Object combo = e.getSource(); //JComboBox<String> combo = (JComboBox)e.getSource(); 이거랑 같음
+		if(combo == comboMeal) {
+	
+		selectIndex = comboMeal.getSelectedIndex();
+	    icon = new ImageIcon("img/m"+ selectIndex + ".jpg");
+		lblMeal.setIcon(icon);
+		
+	}else {
+		selectIndex = comboDrink.getSelectedIndex();
+		icon = new ImageIcon("img/d"+ selectIndex + ".jpg");
+		lblDrink.setIcon(icon);
+	}
+		
+	}
+
+	};
