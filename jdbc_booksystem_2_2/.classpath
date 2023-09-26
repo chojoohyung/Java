@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="jdbc_booksystem_2_2/mysql-connector-java-8.0.30/src/build/java"/>
+	<classpathentry kind="src" path="jdbc_booksystem_2_2/mysql-connector-java-8.0.30/src/demo/java"/>
+	<classpathentry kind="src" path="jdbc_booksystem_2_2/mysql-connector-java-8.0.30/src/generated/java"/>
+	<classpathentry kind="src" path="jdbc_booksystem_2_2/mysql-connector-java-8.0.30/src/legacy/java"/>
+	<classpathentry kind="src" path="jdbc_booksystem_2_2/mysql-connector-java-8.0.30/src/main/core-api/java"/>
+	<classpathentry kind="src" path="jdbc_booksystem_2_2/mysql-connector-java-8.0.30/src/main/core-impl/java"/>
+	<classpathentry kind="src" path="jdbc_booksystem_2_2/mysql-connector-java-8.0.30/src/main/protocol-impl/java"/>
+	<classpathentry kind="src" path="jdbc_booksystem_2_2/mysql-connector-java-8.0.30/src/main/user-api/java"/>
+	<classpathentry kind="src" path="jdbc_booksystem_2_2/mysql-connector-java-8.0.30/src/main/user-impl/java"/>
+	<classpathentry kind="src" path="jdbc_booksystem_2_2/mysql-connector-java-8.0.30/src/test/java"/>
+	<classpathentry kind="src" path="jdbc_booksystem_2_2/src"/>
+	<classpathentry kind="lib" path="jdbc_booksystem_2_2/mysql-connector-java-8.0.30/mysql-connector-java-8.0.30.jar"/>
+	<classpathentry kind="output" path="jdbc_booksystem_2_2/bin"/>
+</classpath>
